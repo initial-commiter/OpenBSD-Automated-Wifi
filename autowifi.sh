@@ -9,7 +9,7 @@ sed '/iwn0/,/network/d' |
 	
 sed -e 's/.*nwid\(.*\)chan.* /\1/' |
 
-sed '/""/d' |sed '/0x0/d' | uniq | head -n 10 
+sed '/""/d' | sed '/0x0/d' | uniq | head -n 10 
 	
 read -p "Type out the name of your ssid: " ssid_name
 	
